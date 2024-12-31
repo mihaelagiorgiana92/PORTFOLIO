@@ -34,6 +34,10 @@ window.onload = function() {
       thankYouMessage.style.display = "block"; // Make the message visible
       thankYouMessage.textContent = "Thank you for submitting the form!"; // Set the message text
   
+      setTimeout(function() {
+        thankYouMessage.style.display = "none"; // Hide the message
+      }, 10000);
+
       form.reset(); // Optionally reset the form after submission
     });
   };
